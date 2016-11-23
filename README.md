@@ -20,7 +20,7 @@ See requirements.txt above for required packages or install using pip install as
 
 <img src="readme_img/dev.jpg" />
 
-The [dev.py](tp_python_stripe_example/settings/dev.py) within the settings folder allows for testing settings to be kept separate from production settings. Update both the 'STRIPE_PUBLISHABLE' key that you got from Stripe and 'STRIPE_SECRET' key available from Testing Pays within the 'dev.py' file. 
+The [dev.py](tp_python_stripe_example/settings/dev.py) within the settings folder allows for testing settings to be kept separate from production settings. Update both the 'STRIPE_PUBLISHABLE' key that you got from Stripe and 'STRIPE_SECRET' key available from Testing Pays within the 'dev.py' file. The Stripe base url is also updated with the dev settings file to point to the Testing Pays API. 
 
 <img src="readme_img/dontations.jpg" />
 
