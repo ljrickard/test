@@ -1,5 +1,5 @@
 # Testing Pays
-
+<img src="readme_img/StackedLogo.png" align="right">
 > Demonstrating how Testing Pays API can be used to test Stripe's payment processor.
 
 ## Requirements
@@ -18,9 +18,15 @@ See requirements.txt above for required packages or install using pip install as
 
 ## Updating API Keys
 
-<img src="dev.jpg" />
+<img src="readme_img/dev.jpg" />
 
-[dev.py](tp_python_stripe_example/settings/dev.py) file contains
+The [dev.py](tp_python_stripe_example/settings/dev.py) within the settings folder allows for testing settings to be kept separate from production settings. Update both the 'STRIPE_PUBLISHABLE' key that you got from Stripe and 'STRIPE_SECRET' key available from Testing Pays within the 'dev.py' file. 
+
+<img src="readme_img/donations.jpg" />
+
+In addition, update the 'STRIPE_PUBLISHABLE' key in the [donations.js](tp_python_stripe_example/python_stripe_payment/static/js/dontations.js)
+file. 
+
 
 The *quick* brown fox, jumped **over** the lazy [dog](https://en.wikipedia.org/wiki/Dog).
 

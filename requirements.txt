@@ -1,0 +1,4 @@
+Django==1.10.3
+requests==2.12.1
+stripe==1.41.1
+wheel==0.24.0
