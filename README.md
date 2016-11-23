@@ -1,5 +1,5 @@
 # Testing Pays
-<img src="readme_img/StackedLogo.png" align="right">
+<img src="readme_img/StackedLogo.png" width="250" height="200" align="right">
 > Demonstrating how Testing Pays API can be used to test Stripe's payment processor.
 
 ## Requirements
