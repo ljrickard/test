@@ -32,11 +32,13 @@ STRIPE_BASE_URL = "https://api.testingpays.com/stripe"
 
 ```
 
-The [dev.py](tp_python_stripe_example/settings/dev.py) within the settings folder allows for testing settings to be kept separate from production settings. Update both the 'STRIPE_PUBLISHABLE' key that you got from Stripe and 'STRIPE_SECRET' key available from Testing Pays within the 'dev.py' file. The Stripe base url is also updated with the dev settings file to point to the Testing Pays API. 
+The [dev.py](tp_python_stripe_example/settings/dev.py) within the settings folder allows for testing settings to be kept separate from production settings. Update both the `STRIPE_PUBLISHABLE` key that you got from Stripe and `STRIPE_SECRET` key available from Testing Pays within the `dev.py` file. The Stripe base url is also updated with the dev settings file to point to the Testing Pays API. 
 
-<img src="readme_img/dontations.jpg" />
+```javascript
+Stripe.setPublishableKey('<insert-your-publishable-stripe-key-here>');
+```
 
-In addition, update the 'STRIPE_PUBLISHABLE' key in the [donations.js](tp_python_stripe_example/python_stripe_payment/static/js/donations.js)
+In addition, update the `Stripe.setPublishableKey` with your Stripe Publishable key in the [donations.js](tp_python_stripe_example/python_stripe_payment/static/js/donations.js)
 file. 
 
 ```python
