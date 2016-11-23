@@ -11,15 +11,14 @@ Python 3.4.3 or later is required to run this application. You can have multiple
 ```
 $ pip install -r requirements.txt
 
-$ python manage.py runserver 8889 --settings=tp_python_stripe_example.settings.dev
-
+$ python manage.py runserver 8000 --settings=tp_python_stripe_example.settings.dev
 ```
 
 See requirements.txt above for required packages or install using pip install as shown above. Prior to running the server it is necessary to add your Stripe publishable key and your [Testing Pays API key](https://admin.testingpays.com). 
 
 ## Updating API Keys
 
-<img src="dev.jpg" align="left" />
+<img src="dev.jpg" />
 
 [dev.py](tp_python_stripe_example/settings/dev.py) file contains
 
