@@ -41,6 +41,8 @@ Stripe.setPublishableKey('<insert-your-publishable-stripe-key-here>');
 In addition, update the `Stripe.setPublishableKey` with your Stripe Publishable key in the [donations.js](python_stripe_payment/static/js/donations.js)
 file. 
 
+## Production versus Development Environments
+
 ```python
 @require_http_methods(['POST'])
 def donations(request):
@@ -57,3 +59,4 @@ def donations(request):
     except stripe.error.CardError as error:
 ```
 
+As shown in the code snippet below from the [views.py](python_stripe_payment/views.py) the dontations route checks if the `stripe.api_key` has been set prior to creating the Stripe charge. This `api_key` is only set for development evironments. When running in production the `STRIPE_BASE_URL` will be empty and therefore the default Stripe key will be used.
